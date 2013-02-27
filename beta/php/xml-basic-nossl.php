@@ -15,7 +15,7 @@ $data = <<<XML
 </pages>
 XML;
 
-$api = new HTTP_Request2("http://localhost:3000/api/templates/{$templateId}.pdf");
+$api = new HTTP_Request2("http://repoten-api.net/api/templates/{$templateId}.pdf");
 
 $api->setMethod(HTTP_Request2::METHOD_POST)
   ->setHeader('Content-Type', 'application/xml')
