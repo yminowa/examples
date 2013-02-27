@@ -28,5 +28,5 @@ if ($response->getStatus() == '200') {
   fwrite($pdf, $response->getBody());
   fclose($pdf);
 } else {
-  exit("Error: {$response->getStatus()}");
+  exit("Error: {$response->getBody()}");
 }
