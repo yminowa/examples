@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>○○イベント参加証 | ThinReports Layout Definition</title><style>
+      .clearfix:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        font-size: 1px;
+        visibility: hidden;
+      }
+      .clearfix {
+        min-height: 1px;
+      }
+      * html .clearfix {
+        height: 1%;
+      }
+      body {
+        margin: 1em;
+        color: #000;
+        font-size: 12px;
+        font-family: Helvetica, Arial, freesans, Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
+      }
+      #header, #footer {
+        color: #aaa;
+        font-size: 16px;
+      }
+      #footer a, #header a {
+        color: inherit;
+        text-decoration: none;
+      }
+      #header {
+        border-bottom: 1px solid #ccc;
+        padding: 0 0 5px 0;
+        margin: 0 0 20px 0;
+        text-align: right;
+      }
+      #header button {
+        float: left;
+        width: 80px;
+        margin: 0;
+        border: 1px solid #ddd;
+        background: #eee;
+        color: #888;
+        font-size: 14px;
+        font-family: Helvetica;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+      }
+      #header button:hover {
+        border-color: #bbb !important;
+      }
+      #header a {
+        float: right;
+      }
+      #footer {
+        border-top: 1px solid #ccc;
+        padding: 10px 0 0 0;
+        margin: 25px 0 15px 0;
+        text-align: center;
+      }
+      h1 {
+        border-bottom: 5px solid #000;
+        font-size: 36px;
+        height: 52px;
+        line-height: 52px;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        margin: 20px 0;
+        padding: 0 0 3px 0;
+        font-size: 22px;
+        border-bottom: 3px solid #555;
+      }
+      h3 {
+        font-size: 18px;
+        border-bottom: 1px solid #888;
+        padding: 0 0 3px 0;
+        margin: 10px 0;
+      }
+      h4 {
+        font-size: 16px;
+        border-bottom: 1px dotted #888;
+        padding: 0 0 3px 0;
+        margin: 10px 0;
+      }
+      h5 {
+        font-size: 16px;
+        padding: 0;
+        margin: 5px 0;
+      }
+      #meta-filename {
+        font-size: 16px;
+        font-style: italic;
+        text-align: right;
+        margin: 0.7em 0 0 0;
+      }
+      .noshapes {
+        margin: 0;
+        padding: 0.7em;
+        background-color: #eee;
+        border: 1px solid #ddd;
+        color: #666;
+        text-align: center;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-raidus: 4px;
+      }
+      .section-shapes {
+        padding-left: 1.5em;
+      }
+      table {
+        width: 100%;
+      }
+      table, table td, table th {
+        border: 1px solid #bbb;
+        border-collapse: collapse;
+      }
+      table th {
+        background-color: #eee;
+        padding: 2px 3px;
+      }
+      table td {
+        padding: 2px 3px;
+      }
+      table tbody tr:hover {
+        background-color: #EDF7FC;
+      }
+      #layout {
+        text-align: center;
+        page-break-after: always;
+      }
+      #layout img {
+        width: 75%;
+        box-shadow: 0px 0px 0.8em #333;
+      }
+      @media print {
+        body {margin: 0 !important}
+        table, table td, table th {border-color: #555 !important}
+        #header button {display: none}
+        #layout img {border: 1px solid #aaa; box-shadow: none !important}
+      }
+    </style></head><body><div id="header" class="clearfix"><button onclick="window.print()">Print</button><a href="http://www.thinreports.org/">ThinReports Layout Difinition</a></div><h1>○○イベント参加証</h1><p id="meta-filename">certificates.tlf</p><h2>レイアウト</h2><div id="layout"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTk1LjIiIGhlaWdodD0iODQxLjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCA1OTUuMiA4NDEuOCI+PGcgY2xhc3M9ImNhbnZhcyI+PGcgY2xhc3M9InMtdGV4dCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEiIGtlcm5pbmc9ImF1dG8iIHgtZGlzcGxheT0idHJ1ZSIgeC1pZD0iIiBmb250LXNpemU9IjM2IiBmb250LWZhbWlseT0iSVBBR290aGljIiBmb250LXdlaWdodD0ibm9ybWFsIiBmb250LXN0eWxlPSJub3JtYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRleHQtZGVjb3JhdGlvbj0ibm9uZSIgeC13aWR0aD0iMzQyIiB4LWhlaWdodD0iMTAwIiB4LWxlZnQ9IjEyNyIgeC10b3A9IjIwIiB4LXZhbGlnbj0iY2VudGVyIj48cmVjdCBjbGFzcz0icy10ZXh0LWJveCIgc3Ryb2tlPSJub25lIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjAuMDAxIiB3aWR0aD0iMzQyIiBoZWlnaHQ9IjEwMCIgeD0iMTI3IiB5PSIyMCI+PC9yZWN0Pjx0ZXh0IGNsYXNzPSJzLXRleHQtbDAiIHNwYWNlPSJwcmVzZXJ2ZSIgc3Ryb2tlPSJub25lIiBmaWxsPSJpbmhlcml0IiBmaWxsLW9wYWNpdHk9IjEiIHRleHQtZGVjb3JhdGlvbj0ibm9uZSIgeD0iMjk4IiB5PSI4My4xIj7il4vil4vjgqTjg5njg7Pjg4gg5Y+C5Yqg6Ki8PC90ZXh0PjwvZz48ZyBjbGFzcz0icy10ZXh0IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMSIga2VybmluZz0iYXV0byIgeC1kaXNwbGF5PSJ0cnVlIiB4LWlkPSIiIGZvbnQtc2l6ZT0iMzYiIGZvbnQtZmFtaWx5PSJJUEFHb3RoaWMiIGZvbnQtd2VpZ2h0PSJub3JtYWwiIGZvbnQtc3R5bGU9Im5vcm1hbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdGV4dC1kZWNvcmF0aW9uPSJub25lIiB4LXdpZHRoPSIxMzMuMSIgeC1oZWlnaHQ9IjM2IiB4LWxlZnQ9IjYxIiB4LXRvcD0iMTc1LjEiPjxyZWN0IGNsYXNzPSJzLXRleHQtYm94IiBzdHJva2U9Im5vbmUiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMC4wMDEiIHdpZHRoPSIxMzMuMSIgaGVpZ2h0PSIzNiIgeD0iNjEiIHk9IjE3NS4xIj48L3JlY3Q+PHRleHQgY2xhc3M9InMtdGV4dC1sMCIgc3BhY2U9InByZXNlcnZlIiBzdHJva2U9Im5vbmUiIGZpbGw9ImluaGVyaXQiIGZpbGwtb3BhY2l0eT0iMSIgdGV4dC1kZWNvcmF0aW9uPSJub25lIiB4PSIxMjcuNiIgeT0iMjA2LjIiPuOBiuWQjeWJjTwvdGV4dD48L2c+PGcgY2xhc3M9InMtdGJsb2NrIiB4LWZvcm1hdC10eXBlPSIiIHgtdmFsdWU9IiIgeC1mb3JtYXQtYmFzZT0iIiB4LXJlZi1pZD0iIiBrZXJuaW5nPSJhdXRvIiB4LWRpc3BsYXk9InRydWUiIHgtbXVsdGlwbGU9ImZhbHNlIiB4LWlkPSJuYW1lIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEiIGZvbnQtc2l6ZT0iMzYiIGZvbnQtZmFtaWx5PSJJUEFHb3RoaWMiIGZvbnQtd2VpZ2h0PSJub3JtYWwiIGZvbnQtc3R5bGU9Im5vcm1hbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdGV4dC1kZWNvcmF0aW9uPSJub25lIiB4LXdpZHRoPSIzMjMuMSIgeC1oZWlnaHQ9IjM2IiB4LWxlZnQ9IjIxMiIgeC10b3A9IjE3NSI+PHJlY3QgY2xhc3M9InMtdGJsb2NrLWJveCIgc3Ryb2tlPSIjN0M0MDA3IiBmaWxsPSIjZjRlMmM0IiBzdHJva2Utd2lkdGg9IjAuMjgiIGZpbGwtb3BhY2l0eT0iMC44IiB3aWR0aD0iMzIzLjEiIGhlaWdodD0iMzYiIHg9IjIxMiIgeT0iMTc1Ij48L3JlY3Q+PHRleHQgY2xhc3M9InMtdGJsb2NrLWlkIiBmb250LXNpemU9IjExIiBmb250LWZhbWlseT0iSGVsdmV0aWNhIiBmb250LXdlaWdodD0ibm9ybWFsIiBmb250LXN0eWxlPSJub3JtYWwiIHRleHQtZGVjb3JhdGlvbj0ibm9uZSIgdGV4dC1hbmNob3I9InN0YXJ0IiBrZXJuaW5nPSJhdXRvIiBzdHJva2U9Im5vbmUiIGZpbGw9IiM3QzQwMDciIGZpbGwtb3BhY2l0eT0iMSIgeD0iMjE0IiB5PSIxODYiPm5hbWU8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="Screen Shot"></div><h2>用紙設定</h2><table><thead><tr><th>用紙</th><th>幅</th><th>高さ</th><th>用紙の向き</th><th>上余白</th><th>下余白</th><th>左余白</th><th>右余白</th></tr></thead><tbody><tr><td>A4</td><td></td><td></td><td>縦</td><td>20</td><td>20</td><td>20</td><td>20</td></tr></tbody></table><h2>オブジェクト</h2><h3>Text Block</h3><table><thead><tr><th rowspan="2">ID</th><th rowspan="2">参照ID</th><th rowspan="2">表示</th><th rowspan="2">複数行</th><th rowspan="2">初期値</th><th colspan="3">書式</th><th rowspan="2">説明</th></tr><tr><th>基本</th><th>種別</th><th>値</th></tr></thead><tbody><tr><td>name</td><td></td><td>Yes</td><td>No</td><td></td><td></td><td>　</td><td></td><td></td></tr></tbody></table><div id="footer"><a href="http://www.thinreports.org">http://www.thinreports.org/</a></div></body></html>

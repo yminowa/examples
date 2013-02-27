@@ -4,5 +4,5 @@
 
 ## Beta
 
-  * [Ruby](https://github.com/repoten-api/examples/blob/master/beta/ruby/)
-  * [PHP](https://github.com/repoten-api/examples/blob/master/beta/php/)
+  * [Ruby Examples](https://github.com/repoten-api/examples/blob/master/beta/ruby/)
+  * [PHP Examples](https://github.com/repoten-api/examples/blob/master/beta/php/)
