@@ -13,11 +13,16 @@ Ruby から REPOTEN-API が提供する PDF 生成API を使う場合のサン�
   * [xml-basic-activesupport.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-basic-activesupport.rb)  
     XML の生成を ``ActiveSupport`` の ``to_xml`` を使ったサンプル（公開テンプレート）
   * [xml-private-basic.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-private-basic.rb)  
-    非公開テンプレートを利用するために必要な API-Key 認証のサンプル
+    非公開テンプレート + XML サンプル
 
 ### 簡単な一覧表
 
-**Comming Soon!**
+> Comming Soon!
+
+## JSON
+
+  * [json-private-basic.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/json-private-basic.rb)  
+    非公開テンプレート + JSON サンプル
 
 ----
 
