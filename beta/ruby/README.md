@@ -2,29 +2,32 @@
 
 Ruby から REPOTEN-API が提供する PDF 生成API を使う場合のサンプルコード集です。
 
-## XML
+## 基本
 
-### 基本
+### XML
 
   * [xml-basic.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-basic.rb)  
-    簡単な公開テンプレートに対する基本的な使い方
+    ... XML / SSL / 公開 / 基本的なテンプレート(certificates.tlf)
   * [xml-basic-nossl.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-basic-nossl.rb)  
-    簡単な公開テンプレートに対する基本的な使い方（非 SSL）
+    ... XML / 非SSL / 公開 / 基本的なテンプレート(certificates.tlf)
   * [xml-basic-activesupport.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-basic-activesupport.rb)  
-    XML の生成を ``ActiveSupport`` の ``to_xml`` を使ったサンプル（公開テンプレート）
+    ... XML(ActiveSupport) / SSL / 公開 / 基本的なテンプレート
   * [xml-private-basic.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-private-basic.rb)  
-    非公開テンプレート + XML サンプル
+    ... XML / SSL / **非公開** / 基本的なテンプレート
 
-### 簡単な一覧表
-
-> Comming Soon!
-
-## JSON
+### JSON
 
   * [json-private-basic.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/json-private-basic.rb)  
-    非公開テンプレート + JSON サンプル
+    ... JSON / SSL / **非公開** / 基本的なテンプレート
+
+## 一覧表
+
+  * [xml-simple-list.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-simple-list.rb)  
+    ... XML / SSL / **非公開** / 簡単な一覧表テンプレート
 
 ----
 
-いずれも [certificates.tlf](https://github.com/repoten-api/examples/blob/master/beta/templates/) テンプレートに対するサンプルコードです。
-テンプレートの仕様は [ThinReports Editor](http://www.thinreports.org/download/) で開くか、同ディレクトリにある ``certificates.tlf.html`` をご覧下さい。
+## テンプレートについて
+
+各サンプルコードで対象としているテンプレートはそれぞれ [テンプレート一覧](https://github.com/repoten-api/examples/blob/master/beta/templates/)
+で公開しています。

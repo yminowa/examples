@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>商品一覧 | ThinReports Layout Definition</title><style>
+      .clearfix:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        font-size: 1px;
+        visibility: hidden;
+      }
+      .clearfix {
+        min-height: 1px;
+      }
+      * html .clearfix {
+        height: 1%;
+      }
+      body {
+        margin: 1em;
+        color: #000;
+        font-size: 12px;
+        font-family: Helvetica, Arial, freesans, Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
+      }
+      #header, #footer {
+        color: #aaa;
+        font-size: 16px;
+      }
+      #footer a, #header a {
+        color: inherit;
+        text-decoration: none;
+      }
+      #header {
+        border-bottom: 1px solid #ccc;
+        padding: 0 0 5px 0;
+        margin: 0 0 20px 0;
+        text-align: right;
+      }
+      #header button {
+        float: left;
+        width: 80px;
+        margin: 0;
+        border: 1px solid #ddd;
+        background: #eee;
+        color: #888;
+        font-size: 14px;
+        font-family: Helvetica;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+      }
+      #header button:hover {
+        border-color: #bbb !important;
+      }
+      #header a {
+        float: right;
+      }
+      #footer {
+        border-top: 1px solid #ccc;
+        padding: 10px 0 0 0;
+        margin: 25px 0 15px 0;
+        text-align: center;
+      }
+      h1 {
+        border-bottom: 5px solid #000;
+        font-size: 36px;
+        height: 52px;
+        line-height: 52px;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        margin: 20px 0;
+        padding: 0 0 3px 0;
+        font-size: 22px;
+        border-bottom: 3px solid #555;
+      }
+      h3 {
+        font-size: 18px;
+        border-bottom: 1px solid #888;
+        padding: 0 0 3px 0;
+        margin: 10px 0;
+      }
+      h4 {
+        font-size: 16px;
+        border-bottom: 1px dotted #888;
+        padding: 0 0 3px 0;
+        margin: 10px 0;
+      }
+      h5 {
+        font-size: 16px;
+        padding: 0;
+        margin: 5px 0;
+      }
+      #meta-filename {
+        font-size: 16px;
+        font-style: italic;
+        text-align: right;
+        margin: 0.7em 0 0 0;
+      }
+      .noshapes {
+        margin: 0;
+        padding: 0.7em;
+        background-color: #eee;
+        border: 1px solid #ddd;
+        color: #666;
+        text-align: center;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-raidus: 4px;
+      }
+      .section-shapes {
+        padding-left: 1.5em;
+      }
+      table {
+        width: 100%;
+      }
+      table, table td, table th {
+        border: 1px solid #bbb;
+        border-collapse: collapse;
+      }
+      table th {
+        background-color: #eee;
+        padding: 2px 3px;
+      }
+      table td {
+        padding: 2px 3px;
+      }
+      table tbody tr:hover {
+        background-color: #EDF7FC;
+      }
+      #layout {
+        text-align: center;
+        page-break-after: always;
+      }
+      #layout img {
+        width: 75%;
+        box-shadow: 0px 0px 0.8em #333;
+      }
+      @media print {
+        body {margin: 0 !important}
+        table, table td, table th {border-color: #555 !important}
+        #header button {display: none}
+        #layout img {border: 1px solid #aaa; box-shadow: none !important}
+      }
+    </style></head><body><div id="header" class="clearfix"><button onclick="window.print()">Print</button><a href="http://www.thinreports.org/">ThinReports Layout Difinition</a></div><h1>商品一覧</h1><p id="meta-filename">items.tlf</p><h2>レイアウト</h2><div id="layout"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTk1LjIiIGhlaWdodD0iODQxLjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCA1OTUuMiA4NDEuOCI+PGcgY2xhc3M9ImNhbnZhcyI+PGcgY2xhc3M9InMtdGV4dCIgc3Ryb2tlLXdpZHRoPSIwIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEiIGtlcm5pbmc9ImF1dG8iIHgtZGlzcGxheT0idHJ1ZSIgeC1pZD0iIiBmb250LXNpemU9IjI2IiBmb250LWZhbWlseT0iSVBBR290aGljIiBmb250LXdlaWdodD0ibm9ybWFsIiBmb250LXN0eWxlPSJub3JtYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRleHQtZGVjb3JhdGlvbj0ibm9uZSIgeC13aWR0aD0iMjAwIiB4LWhlaWdodD0iNTYuOSIgeC1sZWZ0PSIxOTgiIHgtdG9wPSIyMCIgeC12YWxpZ249ImNlbnRlciI+PHJlY3QgY2xhc3M9InMtdGV4dC1ib3giIHN0cm9rZT0ibm9uZSIgZmlsbD0iIzAwMDAwMCIgZmlsbC1vcGFjaXR5PSIwLjAwMSIgd2lkdGg9IjIwMCIgaGVpZ2h0PSI1Ni45IiB4PSIxOTgiIHk9IjIwIj48L3JlY3Q+PHRleHQgY2xhc3M9InMtdGV4dC1sMCIgc3BhY2U9InByZXNlcnZlIiBzdHJva2U9Im5vbmUiIGZpbGw9ImluaGVyaXQiIGZpbGwtb3BhY2l0eT0iMSIgdGV4dC1kZWNvcmF0aW9uPSJub25lIiB4PSIyOTgiIHk9IjU4Ij7llYblk4HkuIDopqc8L3RleHQ+PC9nPjxnIGNsYXNzPSJzLWxpc3QiIHgtaWQ9ImRlZmF1bHQiIHgtaGVhZGVyLWVuYWJsZWQ9InRydWUiIHgtcGFnZS1mb290ZXItZW5hYmxlZD0iZmFsc2UiIHgtZm9vdGVyLWVuYWJsZWQ9ImZhbHNlIiB4LWNoYW5naW5nLXBhZ2U9InRydWUiIHgtZGlzcGxheT0idHJ1ZSIgd2lkdGg9IjU1NS4yIiBoZWlnaHQ9IjQwMS4yIiB4PSIyMCIgeT0iMTAwIj48ZyBjbGFzcz0icy1saXN0LWhlYWRlciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwtMTEpIHJvdGF0ZSgwIDAgMCkiIHgtdG9wPSIxMDAiIHgtaGVpZ2h0PSI1NC4xIj48bGluZSBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgY2xhc3M9InMtbGluZSIgeC1kaXNwbGF5PSJ0cnVlIiB4LXN0cm9rZS10eXBlPSJzb2xpZCIgc3Ryb2tlLWRhc2hhcnJheT0ibm9uZSIgeC1pZD0iIiB4MT0iMjAiIHgyPSI1NzUuMiIgeTE9IjE2NS4xIiB5Mj0iMTY1LjEiPjwvbGluZT48ZyBjbGFzcz0icy10ZXh0IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMSIga2VybmluZz0iYXV0byIgeC1kaXNwbGF5PSJ0cnVlIiB4LWlkPSIiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtZmFtaWx5PSJJUEFHb3RoaWMiIGZvbnQtd2VpZ2h0PSJub3JtYWwiIGZvbnQtc3R5bGU9Im5vcm1hbCIgdGV4dC1hbmNob3I9InN0YXJ0IiB0ZXh0LWRlY29yYXRpb249Im5vbmUiIHgtd2lkdGg9IjMyMS4xIiB4LWhlaWdodD0iMjkuMSIgeC1sZWZ0PSIxMTgiIHgtdG9wPSIxMzYiIHgtdmFsaWduPSJjZW50ZXIiPjxyZWN0IGNsYXNzPSJzLXRleHQtYm94IiBzdHJva2U9Im5vbmUiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMC4wMDEiIHdpZHRoPSIzMjEuMSIgaGVpZ2h0PSIyOS4xIiB4PSIxMTgiIHk9IjEzNiI+PC9yZWN0Pjx0ZXh0IGNsYXNzPSJzLXRleHQtbDAiIHNwYWNlPSJwcmVzZXJ2ZSIgc3Ryb2tlPSJub25lIiBmaWxsPSJpbmhlcml0IiBmaWxsLW9wYWNpdHk9IjEiIHRleHQtZGVjb3JhdGlvbj0ibm9uZSIgeD0iMTE4IiB5PSIxNTcuMiI+5ZCN56ewPC90ZXh0PjwvZz48ZyBjbGFzcz0icy10ZXh0IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMSIga2VybmluZz0iYXV0byIgeC1kaXNwbGF5PSJ0cnVlIiB4LWlkPSIiIHN0cm9rZT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vcm1hbCIgZm9udC1zdHlsZT0ibm9ybWFsIiBmb250LWZhbWlseT0iSVBBR290aGljIiBmb250LXNpemU9IjE4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB4LXZhbGlnbj0iY2VudGVyIiB0ZXh0LWRlY29yYXRpb249Im5vbmUiIHgtd2lkdGg9IjEzNi4xIiB4LWhlaWdodD0iMjkuMSIgeC1sZWZ0PSI0MzkuMSIgeC10b3A9IjEzNiI+PHJlY3QgY2xhc3M9InMtdGV4dC1ib3giIHN0cm9rZT0ibm9uZSIgZmlsbD0iIzAwMDAwMCIgZmlsbC1vcGFjaXR5PSIwLjAwMSIgd2lkdGg9IjEzNi4xIiBoZWlnaHQ9IjI5LjEiIHg9IjQzOS4xIiB5PSIxMzYiPjwvcmVjdD48dGV4dCBjbGFzcz0icy10ZXh0LWwwIiBzcGFjZT0icHJlc2VydmUiIHN0cm9rZT0ibm9uZSIgZmlsbD0iaW5oZXJpdCIgZmlsbC1vcGFjaXR5PSIxIiB0ZXh0LWRlY29yYXRpb249Im5vbmUiIHg9IjUwNy4yIiB5PSIxNTcuMiI+5Y2Y5L6hPC90ZXh0PjwvZz48ZyBjbGFzcz0icy10ZXh0IiBzdHJva2Utd2lkdGg9IjAiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMSIga2VybmluZz0iYXV0byIgeC1kaXNwbGF5PSJ0cnVlIiB4LWlkPSIiIHN0cm9rZT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vcm1hbCIgZm9udC1zdHlsZT0ibm9ybWFsIiBmb250LWZhbWlseT0iSVBBR290aGljIiBmb250LXNpemU9IjE4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB4LXZhbGlnbj0iY2VudGVyIiB0ZXh0LWRlY29yYXRpb249Im5vbmUiIHgtd2lkdGg9Ijk4IiB4LWhlaWdodD0iMjkuMSIgeC1sZWZ0PSIyMCIgeC10b3A9IjEzNiI+PHJlY3QgY2xhc3M9InMtdGV4dC1ib3giIHN0cm9rZT0ibm9uZSIgZmlsbD0iIzAwMDAwMCIgZmlsbC1vcGFjaXR5PSIwLjAwMSIgd2lkdGg9Ijk4IiBoZWlnaHQ9IjI5LjEiIHg9IjIwIiB5PSIxMzYiPjwvcmVjdD48dGV4dCBjbGFzcz0icy10ZXh0LWwwIiBzcGFjZT0icHJlc2VydmUiIHN0cm9rZT0ibm9uZSIgZmlsbD0iaW5oZXJpdCIgZmlsbC1vcGFjaXR5PSIxIiB0ZXh0LWRlY29yYXRpb249Im5vbmUiIHg9IjY5IiB5PSIxNTcuMiI+5YiG6aGePC90ZXh0PjwvZz48L2c+PGcgY2xhc3M9InMtbGlzdC1kZXRhaWwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM3LjEpIHJvdGF0ZSgwIDAgMCkiIHgtdG9wPSIxNTQuMSIgeC1oZWlnaHQ9IjQ4Ij48ZyBjbGFzcz0icy10YmxvY2siIHgtZm9ybWF0LXR5cGU9IiIgeC12YWx1ZT0iIiB4LWZvcm1hdC1iYXNlPSIiIHgtcmVmLWlkPSIiIGtlcm5pbmc9ImF1dG8iIHgtZGlzcGxheT0idHJ1ZSIgeC1tdWx0aXBsZT0iZmFsc2UiIHgtaWQ9Imdyb3VwIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtZmFtaWx5PSJJUEFHb3RoaWMiIGZvbnQtd2VpZ2h0PSJub3JtYWwiIGZvbnQtc3R5bGU9Im5vcm1hbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdGV4dC1kZWNvcmF0aW9uPSJub25lIiB4LXdpZHRoPSI5OCIgeC1oZWlnaHQ9IjE4IiB4LWxlZnQ9IjIwIiB4LXRvcD0iMjA2LjIiPjxyZWN0IGNsYXNzPSJzLXRibG9jay1ib3giIHN0cm9rZT0iIzdDNDAwNyIgZmlsbD0iI2Y0ZTJjNCIgc3Ryb2tlLXdpZHRoPSIwLjI4IiBmaWxsLW9wYWNpdHk9IjAuOCIgd2lkdGg9Ijk4IiBoZWlnaHQ9IjE4IiB4PSIyMCIgeT0iMjA2LjIiPjwvcmVjdD48dGV4dCBjbGFzcz0icy10YmxvY2staWQiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2EiIGZvbnQtd2VpZ2h0PSJub3JtYWwiIGZvbnQtc3R5bGU9Im5vcm1hbCIgdGV4dC1kZWNvcmF0aW9uPSJub25lIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGtlcm5pbmc9ImF1dG8iIHN0cm9rZT0ibm9uZSIgZmlsbD0iIzdDNDAwNyIgZmlsbC1vcGFjaXR5PSIxIiB4PSIyMiIgeT0iMjE3LjIiPmdyb3VwPC90ZXh0PjwvZz48ZyBjbGFzcz0icy10YmxvY2siIHgtZm9ybWF0LXR5cGU9IiIgeC12YWx1ZT0iIiB4LWZvcm1hdC1iYXNlPSIiIHgtcmVmLWlkPSIiIGtlcm5pbmc9ImF1dG8iIHgtZGlzcGxheT0idHJ1ZSIgeC1tdWx0aXBsZT0iZmFsc2UiIHgtaWQ9Im5hbWUiIHgtd2lkdGg9IjMyMS4xIiB4LWhlaWdodD0iMTgiIHgtbGVmdD0iMTE4IiB4LXRvcD0iMjA2LjIiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMSIgZm9udC1zaXplPSIxOCIgZm9udC1mYW1pbHk9IklQQUdvdGhpYyIgZm9udC13ZWlnaHQ9Im5vcm1hbCIgZm9udC1zdHlsZT0ibm9ybWFsIiB0ZXh0LWRlY29yYXRpb249Im5vbmUiIHRleHQtYW5jaG9yPSJzdGFydCIgeC1vdmVyZmxvdz0idHJ1bmNhdGUiPjxyZWN0IGNsYXNzPSJzLXRibG9jay1ib3giIHN0cm9rZT0iIzdDNDAwNyIgZmlsbD0iI2Y0ZTJjNCIgc3Ryb2tlLXdpZHRoPSIwLjI4IiBmaWxsLW9wYWNpdHk9IjAuOCIgd2lkdGg9IjMyMS4xIiBoZWlnaHQ9IjE4IiB4PSIxMTgiIHk9IjIwNi4yIj48L3JlY3Q+PHRleHQgY2xhc3M9InMtdGJsb2NrLWlkIiBmb250LXNpemU9IjExIiBmb250LWZhbWlseT0iSGVsdmV0aWNhIiBmb250LXdlaWdodD0ibm9ybWFsIiBmb250LXN0eWxlPSJub3JtYWwiIHRleHQtZGVjb3JhdGlvbj0ibm9uZSIgdGV4dC1hbmNob3I9InN0YXJ0IiBrZXJuaW5nPSJhdXRvIiBzdHJva2U9Im5vbmUiIGZpbGw9IiM3QzQwMDciIGZpbGwtb3BhY2l0eT0iMSIgeD0iMTIwIiB5PSIyMTcuMiI+bmFtZTwvdGV4dD48L2c+PGcgY2xhc3M9InMtdGJsb2NrIiB4LWZvcm1hdC10eXBlPSIiIHgtdmFsdWU9IiIgeC1mb3JtYXQtYmFzZT0iIiB4LXJlZi1pZD0iIiBrZXJuaW5nPSJhdXRvIiB4LWRpc3BsYXk9InRydWUiIHgtbXVsdGlwbGU9ImZhbHNlIiB4LWlkPSJwcmljZSIgeC13aWR0aD0iMTM2LjEiIHgtaGVpZ2h0PSIxOCIgeC1sZWZ0PSI0MzkuMSIgeC10b3A9IjIwNi4yIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtZmFtaWx5PSJJUEFHb3RoaWMiIGZvbnQtd2VpZ2h0PSJub3JtYWwiIGZvbnQtc3R5bGU9Im5vcm1hbCIgdGV4dC1kZWNvcmF0aW9uPSJub25lIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIHgtb3ZlcmZsb3c9InRydW5jYXRlIj48cmVjdCBjbGFzcz0icy10YmxvY2stYm94IiBzdHJva2U9IiM3QzQwMDciIGZpbGw9IiNmNGUyYzQiIHN0cm9rZS13aWR0aD0iMC4yOCIgZmlsbC1vcGFjaXR5PSIwLjgiIHdpZHRoPSIxMzYuMSIgaGVpZ2h0PSIxOCIgeD0iNDM5LjEiIHk9IjIwNi4yIj48L3JlY3Q+PHRleHQgY2xhc3M9InMtdGJsb2NrLWlkIiBmb250LXNpemU9IjExIiBmb250LWZhbWlseT0iSGVsdmV0aWNhIiBmb250LXdlaWdodD0ibm9ybWFsIiBmb250LXN0eWxlPSJub3JtYWwiIHRleHQtZGVjb3JhdGlvbj0ibm9uZSIgdGV4dC1hbmNob3I9InN0YXJ0IiBrZXJuaW5nPSJhdXRvIiBzdHJva2U9Im5vbmUiIGZpbGw9IiM3QzQwMDciIGZpbGwtb3BhY2l0eT0iMSIgeD0iNDQxLjEiIHk9IjIxNy4yIj5wcmljZTwvdGV4dD48L2c+PC9nPjxnIGNsYXNzPSJzLWxpc3QtcGFnZS1mb290ZXIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTY5LjMpIHJvdGF0ZSgwIDAgMCkiIHgtdG9wPSIyMDIuMSIgeC1oZWlnaHQ9IjAiIGRpc3BsYXk9Im5vbmUiPjwvZz48ZyBjbGFzcz0icy1saXN0LWZvb3RlciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwtMTI5LjUpIHJvdGF0ZSgwIDAgMCkiIHgtdG9wPSIyMDIuMSIgeC1oZWlnaHQ9IjAiIGRpc3BsYXk9Im5vbmUiPjwvZz48dGV4dCBjbGFzcz0icy1saXN0LWlkIiBmb250LXNpemU9IjExIiBmb250LWZhbWlseT0iSGVsdmV0aWNhIiBmb250LXdlaWdodD0ibm9ybWFsIiBmb250LXN0eWxlPSJub3JtYWwiIHRleHQtYW5jaG9yPSJzdGFydCIgc3Ryb2tlPSJub25lIiBmaWxsPSIjN0M0MDA3IiBmaWxsLW9wYWNpdHk9IjEiIHg9IjIyIiB5PSIxMTAuOCI+ZGVmYXVsdDwvdGV4dD48cmVjdCBzdHJva2UtZGFzaGFycmF5PSI1IiBzdHJva2U9IiNCQkJCQkIiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1vcGFjaXR5PSIwIiBjbGFzcz0icy1saXN0LWZhY2UiIHdpZHRoPSI1NTUuMiIgaGVpZ2h0PSI0MDEuMiIgeD0iMjAiIHk9IjEwMCI+PC9yZWN0PjwvZz48L2c+PC9zdmc+" alt="Screen Shot"></div><h2>用紙設定</h2><table><thead><tr><th>用紙</th><th>幅</th><th>高さ</th><th>用紙の向き</th><th>上余白</th><th>下余白</th><th>左余白</th><th>右余白</th></tr></thead><tbody><tr><td>A4</td><td></td><td></td><td>縦</td><td>20</td><td>20</td><td>20</td><td>20</td></tr></tbody></table><h2>オブジェクト</h2><h3>List</h3><table><thead><tr><th>ID</th><th>表示</th><th>自動改ページ</th><th>ヘッダー</th><th>ページフッター</th><th>フッター</th><th>説明</th></tr></thead><tbody><tr><td>default</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td><td></td></tr></tbody></table><h4>Header</h4><div class="section-shapes"><p class="noshapes">オブジェクトはありません</p></div><h4>Detail</h4><div class="section-shapes"><h5>Text Block</h5><table><thead><tr><th rowspan="2">ID</th><th rowspan="2">参照ID</th><th rowspan="2">表示</th><th rowspan="2">複数行</th><th rowspan="2">初期値</th><th colspan="3">書式</th><th rowspan="2">説明</th></tr><tr><th>基本</th><th>種別</th><th>値</th></tr></thead><tbody><tr><td>group</td><td></td><td>Yes</td><td>No</td><td></td><td></td><td>　</td><td></td><td></td></tr><tr><td>name</td><td></td><td>Yes</td><td>No</td><td></td><td></td><td>　</td><td></td><td></td></tr><tr><td>price</td><td></td><td>Yes</td><td>No</td><td></td><td></td><td>　</td><td></td><td></td></tr></tbody></table></div><div id="footer"><a href="http://www.thinreports.org">http://www.thinreports.org/</a></div></body></html>
