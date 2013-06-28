@@ -20,10 +20,12 @@ Ruby から REPOTEN-API が提供する PDF 生成API を使う場合のサン�
   * [json-private-basic.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/json-private-basic.rb)  
     ... JSON / SSL / **非公開** / 基本的なテンプレート
 
-## 一覧表
+## Tips
 
   * [xml-simple-list.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-simple-list.rb)  
-    ... XML / SSL / **非公開** / 簡単な一覧表テンプレート
+    ... 簡単な一覧表を生成するサンプルコード (XML/SSL/非公開)
+  * [xml-embed-image.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-embed-image.rb)
+    ... 画像データを送信して PDF に埋め込むサンプルコード (XML/非SSL/公開)
 
 ----
 
