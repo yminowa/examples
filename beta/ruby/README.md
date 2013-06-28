@@ -23,9 +23,9 @@ Ruby から REPOTEN-API が提供する PDF 生成API を使う場合のサン�
 ## Tips
 
   * [xml-simple-list.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-simple-list.rb)  
-    ... 簡単な一覧表を生成するサンプルコード (XML/SSL/非公開)
-  * [xml-embed-image.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-embed-image.rb)
-    ... 画像データを送信して PDF に埋め込むサンプルコード (XML/非SSL/公開)
+    ... 簡単な一覧表を生成するサンプルコード (XML/SSL/非公開/items.tlf)
+  * [xml-embed-image.rb](https://github.com/repoten-api/examples/blob/master/beta/ruby/xml-embed-image.rb)  
+    ... 画像データを送信して PDF に埋め込むサンプルコード (XML/非SSL/公開/embed-image.tlf)
 
 ----
 
